@@ -1,0 +1,16 @@
+_deps/
+bin/
+build/
+lib/
+CMakeFiles/
+cmake-build-debug/
+.idea/
+
+*.cbp
+*.cmake
+*.dylib
+*.a
+
+.envrc
+CMakeCache.txt
+Makefile

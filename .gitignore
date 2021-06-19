@@ -5,11 +5,16 @@ lib/
 CMakeFiles/
 cmake-build-debug/
 .idea/
+Testing/
+*.trace/
 
 *.cbp
 *.cmake
 *.dylib
 *.a
+*.bin
+*.zip
+
 
 .envrc
 CMakeCache.txt

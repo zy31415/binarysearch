@@ -3,6 +3,7 @@
 extern "C" {
 #include "../src/binary_search.h"
 }
+
 TEST(HelloTest, BasicAssertions1) {
 
     int arr[] = {1, 5, 9};

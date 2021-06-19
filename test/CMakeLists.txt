@@ -10,16 +10,26 @@ FetchContent_MakeAvailable(googletest)
 
 
 add_executable(
-        binary_search_test
-#        ${PROJECT_SOURCE_DIR}/src/binary_search.c
+        binary_search_test.bin
         binary_search_test.cc
 )
 
 target_link_libraries(
-        binary_search_test
+        binary_search_test.bin
+        binary_search
+        gtest_main
+)
+
+add_executable(
+        binary_search_str_test.bin
+        binary_search_str_test.cc
+)
+
+target_link_libraries(
+        binary_search_str_test.bin
         binary_search
         gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(binary_search_test)
+gtest_discover_tests(binary_search_str_test.bin)
